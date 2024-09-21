@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Gasolina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <section id="sectionFormulario">
+            <div>
+                <h1>Calculadora de KM/L New Fiesta 2014</h1>
+                <p>* Inserir dados para um único percurso.</p>
+            </div>
+            <div>
+                <form action="javascript:void(0)" onsubmit="calcular()">
+                    <fieldset>
+                        <p>
+                            <label for="pedagio">Pedagio:</label>
+                            <input type="number" name="pedagio" id="pedagio" required>
+                            <label for="pedagio" class="labelAviso">* Verifique o valor do pedágio com o App
+                                Waze</label>
+                        </p>
+                        <p>
+                            <label for="qntPessoa">Quantidade de pessoas para dividir</label>
+                            <input type="number" name="qntPessoa" id="qntPessoa" required>
+                        </p>
+                        <p>
+                            <label for="precoGasolina">Preço do Combustível</label>
+                            <input type="number" name="precoGasolina" id="precoGasolina" required>
+                        </p>
+                        <p>
+                            <label for="km">Km:</label>
+                            <input type="number" name="km" id="km" required>
+                            <label for="tempo">Tempo:</label>
+                            <input type="number" name="tempo" id="tempo" required>
+                            <label for="tempo" class="labelAviso">* Horas</label>
+                        </p>
+                        <p>
+                            <label for="">Percurso:</label>
+                            <input type="radio" name="percurso" id="percurso1" value="1" required>
+                            <label for="percurso1" class="labelAviso">Somente Ida</label>
+                            <input type="radio" name="percurso" id="percurso2" value="2" required checked>
+                            <label for="percurso2" class="labelAviso">Ida e Volta</label>
+                        </p>
+                        <p>
+                            <label for="">Tipo:</label>
+                            <input type="radio" name="tipo" id="tipo1" value="1" required checked>
+                            <label for="tipo1" class="labelAviso">Passeio: 7.8 Km/L</label>
+                            <input type="radio" name="tipo" id="tipo2" value="2" required>
+                            <label for="tipo2" class="labelAviso">Estrada: 9.6 Km/L</label>
+                        </p>
+                        <p>
+                            <input type="submit" value="Calcular">
+                            <input type="reset" value="Limpar">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section id="sectionResultado">
+            <div>
+
+            </div>
+        </section>
+    </header>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
